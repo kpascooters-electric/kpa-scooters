@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KPA Scooters</title>
+
+<style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* CARD STYLE */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* SERVICES */
+.services li {
+  margin-bottom: 10px;
+}
+
+/* SLIDER */
+.slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* BUTTONS */
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>KPA Scooters</h1>
+  <p>Smart Electric Mobility — No License. No Hassle.</p>
+</header>
+
+<section>
+  <div class="card">
+    <h2>Welcome</h2>
+    <p>
+      Discover a smarter way to travel with KPA Scooters. Our non-licensed electric scooters are built for convenience,
+      making them perfect for students, commuters, and everyday riders.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>About Us</h2>
+    <p>
+      Since 2021, KPA Scooters has been a trusted electric scooter dealer in Palakkad. We provide low-speed electric
+      vehicles that are easy to use and legally accessible without a license or registration.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Services</h2>
+    <ul class="services">
+      <li>Electric scooter sales</li>
+      <li>Servicing & maintenance</li>
+      <li>Battery replacement</li>
+      <li>Spare parts support</li>
+      <li>Doorstep service (if available)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Our Scooters</h2>
+
+    <div class="slider">
+      <div class="slides" id="slides">
+        <img src="scooter1.jpg">
+        <img src="scooter2.jpg">
+        <img src="scooter3.jpg">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Contact</h2>
+    <p><strong>Phone:</strong> +91 9633734234</p>
+    <p><strong>Email:</strong> kpascooters@gmail.com</p>
+    <p>
+      <a class="btn" href="https://share.google/fMptwGXss84IrAiUq" target="_blank">
+        View Location
+      </a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 KPA Scooters</p>
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/919633734234" target="_blank">💬</a>
+
+<!-- SLIDER SCRIPT -->
+<script>
+let index = 0;
+const slides = document.getElementById("slides");
+
+function autoSlide() {
+  index++;
+  if (index > 2) index = 0;
+  slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+setInterval(autoSlide, 3000);
+</script>
+
+</body>
+</html>
