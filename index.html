@@ -54,15 +54,11 @@ nav a {
 
 /* HERO */
 header {
-  height: 100vh;
+  height: auto;
   background:
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('images/hero.jpg') no-repeat center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 40px;
-  color: white;
+    url('images/hero.jpg') no-repeat center top;
+  background-size: contain;
 }
 
 .hero-content {
@@ -135,7 +131,10 @@ ul li {
 
 .gallery img {
   width: 100%;
-  height: auto;
+  height: 250px;
+  object-fit: contain;
+  background: #f1f5f9;
+  padding: 10px;
   border-radius: 10px;
 }
 
