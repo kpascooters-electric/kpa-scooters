@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KPA Scooters</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(15,23,42,0.9);
+  padding: 10px 40px;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo img {
+  height: 40px;
+}
+
+/* MENU */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+header {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('images/hero.jpg') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 500px;
+  text-align: right;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.button {
+  padding: 12px 25px;
+  background: #22c55e;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* CENTER BUTTON */
+.center-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* SERVICES */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* MAP */
+.map-container iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-container">
+
+    <!-- AUTO LOGO -->
+    <div class="logo">
+      <img src="images/logo.png" alt="KPA Scooters Logo">
+    </div>
+
+    <!-- MENU -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<header>
+  <div class="hero-content">
+    <h1>KPA Scooters</h1>
+    <p>Electric Scooter Dealer in Palakkad, Kerala</p>
+
+    <a href="https://wa.me/919633734234?text=Hi%2C%20I%20want%20to%20book%20a%20test%20ride" class="button">
+      Book a Ride Now!
+    </a>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <div class="card">
+    <p>
+      KPA Scooters provides affordable and eco-friendly electric mobility solutions in Palakkad.
+      We offer Tylos electric scooters and guide you in selecting the perfect model.
+      Our team also supports battery care and maintenance.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Services</h2>
+  <div class="card">
+    <ul>
+      <li>Non-licensed Electric Scooters</li>
+      <li>Registered EV Scooters</li>
+      <li>Vehicle Insurance</li>
+      <li>Used Two-Wheelers</li>
+      <li>Helmets & Accessories</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <h2>Product Lineup</h2>
+  <div class="gallery">
+    <img src="images/scooter1.jpg">
+    <img src="images/scooter2.jpg">
+    <img src="images/scooter3.jpg">
+    <img src="images/scooter4.jpg">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+
+    <p><strong>WhatsApp:</strong> 096337 34234</p>
+    <p><strong>Email:</strong> kpascooters@gmail.com</p>
+
+    <p><strong>Address:</strong><br>
+      Surya Building, next to Polyclinic Hospital,<br>
+      Kalmandapam, Palakkad, Kerala - 678001
+    </p>
+
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5215343166387!2d76.67073169999999!3d10.771310099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86dcbf3ef932b%3A0x461b0f411b1af1f5!2sKPA%20Scooters%20Palakkad!5e0!3m2!1sen!2sin!4v1777831687677!5m2!1sen!2sin"
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <div class="center-btn">
+      <a href="https://wa.me/919633734234" class="button">
+        Contact us on WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 KPA Scooters</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919633734234">💬</a>
+
+</body>
+</html>
